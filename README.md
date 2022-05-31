@@ -1,5 +1,5 @@
 # hash-app-go
-Small App to Hash Password Technical Exercise
+Small App to Hash Passwords Technical Exercise
 
 ## Assumptions
 
