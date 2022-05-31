@@ -7,7 +7,7 @@ The following assumptions are being made:
 
 * Since the exercise clearly states that only standard libraries should be used, I am not using a database connection since that will require the use of external driver libraries. Otherwise, I would have used a DB to manage the password hashes
 * I'm also assuming that not web framework can be used.
-* I'm also assuming that all unit tests for this service will run before being built and deployed. 
+* I'm also assuming that all unit tests for this service will run through a CI/CD pipeline before being built and deployed. 
 
 ## Requirements
 
