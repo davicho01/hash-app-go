@@ -15,7 +15,7 @@ type Hash struct {
 }
 
 func NewHash() *Hash {
-	logger := log.New(os.Stdout, "Hash Handler: ", log.LstdFlags)
+	logger := log.New(os.Stdout, "Hash Service: ", log.LstdFlags)
 	keyStorage := repository.NewKeyStorage()
 	return &Hash{logger, keyStorage}
 }

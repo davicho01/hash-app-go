@@ -12,7 +12,7 @@ type Stats struct {
 }
 
 func NewStats() *Stats {
-	logger := log.New(os.Stdout, "Stats Handler: ", log.LstdFlags)
+	logger := log.New(os.Stdout, "Stats Service: ", log.LstdFlags)
 	stats := repository.NewStats()
 	return &Stats{logger, stats}
 }

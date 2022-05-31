@@ -18,7 +18,7 @@ type Stats struct {
 }
 
 func NewStats() *Stats {
-	logger := log.New(os.Stdout, "KeyStorage Repository: ", log.LstdFlags)
+	logger := log.New(os.Stdout, "StatsStorage Repository: ", log.LstdFlags)
 	postRequest := []int64{}
 	average := 0.0
 	return &Stats{logger, postRequest, average}
