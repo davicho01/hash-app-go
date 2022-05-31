@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"app/handlers"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
@@ -10,7 +11,7 @@ import (
 
 func TestHash_GenerateHash(t *testing.T) {
 
-	handler := NewHash()
+	handler := handlers.NewHash()
 
 	req, _ := http.NewRequest("POST", "/hash", nil)
 	writer := httptest.NewRecorder()
@@ -44,7 +45,7 @@ func TestHash_GenerateHash(t *testing.T) {
 
 func TestHash_GetHashByIdentifier(t *testing.T) {
 
-	handler := NewHash()
+	handler := handlers.NewHash()
 
 	req, _ := http.NewRequest("POST", "/hash", nil)
 	req.PostForm = url.Values{}
@@ -81,7 +82,7 @@ func TestHash_GetHashByIdentifier(t *testing.T) {
 
 func TestHash_GetHashStats(t *testing.T) {
 
-	handler := NewHash()
+	handler := handlers.NewHash()
 
 	req, _ := http.NewRequest("GET", "/stats", nil)
 	writer := httptest.NewRecorder()

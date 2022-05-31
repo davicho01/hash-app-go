@@ -1,13 +1,14 @@
 package services
 
 import (
+	"app/services"
 	"testing"
 	"time"
 )
 
 func TestHash_HashPassword(t *testing.T) {
 
-	hashService := NewHash()
+	hashService := services.NewHash()
 
 	hash := hashService.HashPassword("angryMonkey")
 	if hash != "ZEHhWB65gUlzdVwtDQArEyx+KVLzp/aTaRaPlBzYRIFj6vjFdqEb0Q5B8zVKCZ0vKbZPZklJz0Fd7su2A+gf7Q==" {
@@ -22,7 +23,7 @@ func TestHash_HashPassword(t *testing.T) {
 
 func TestHash_CreateHash(t *testing.T) {
 
-	hashService := NewHash()
+	hashService := services.NewHash()
 	identifier := hashService.CreateHash("angryMonkey")
 
 	if identifier != 1 {
@@ -34,7 +35,7 @@ func TestHash_CreateHash(t *testing.T) {
 
 func TestHash_GetHash(t *testing.T) {
 
-	hashService := NewHash()
+	hashService := services.NewHash()
 
 	keyStore := hashService.GetHash(1)
 

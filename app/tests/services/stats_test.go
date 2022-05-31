@@ -1,12 +1,13 @@
 package services
 
 import (
+	"app/services"
 	"testing"
 )
 
 func TestStats(t *testing.T) {
 
-	statsService := NewStats()
+	statsService := services.NewStats()
 
 	statsService.AddStats(10)
 	statsService.AddStats(7)
