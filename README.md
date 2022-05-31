@@ -38,7 +38,11 @@ Run container `docker run --rm -it -p 8080:8080 hash-app-go`
 
 ## Unit Testing
 
+To run all Unit test:
 
+Go to `hash-app-go/app` directory
+
+Run `go test ./tests/... -v`
 
 ## Testing API
 
